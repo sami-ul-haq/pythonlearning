@@ -488,6 +488,297 @@
 # word_counter = {char:name.count(char) for char in name}
 # print(word_counter)
 
-even_odd = { i : ("Even " if i%2 == 0 else "Odd") for i in range(1,11)  }
-for k,v in even_odd.items():
-    print(f"{k} : {v}" )
+# even_odd = { i : ("Even " if i%2 == 0 else "Odd") for i in range(1,11)  }
+# for k,v in even_odd.items():
+#     print(f"{k} : {v}" )
+
+# num = int(input("Enter Number: "))
+# for i in range(1,num+1):
+#     for j in range(1,i+1):
+#         print("*", end=" ")
+#     print()
+
+# def total(*args):
+#     return args
+
+# print(total(1,2,3,4,5,6))
+
+# class Person:
+#     def __init__(self,firstname,lastname,age,gender):
+#         self.firstname = firstname
+#         self.lastname = lastname
+#         self.age = age
+#         self.gender = gender
+    
+# p1 = Person("Sami", "Haq" , 18 , "Male")
+# print(p1.firstname)
+
+# class Laptop:
+#     def __init__(self, name , Model_name , price):
+#         self.name = name
+#         self.Model_name = Model_name
+#         self.price = price
+#         self.complete = name + " " + Model_name
+
+# lap1 = Laptop("Dell" , "Logistic" , 32000)
+# lap2 = Laptop("HP" , "EliteBook" , 35000)
+# print(lap2.complete)
+
+# l = [1,2,3,4,5]
+# l2 = [6,7,8,9,10]
+# list.append(l2 , 2)
+# print(l2)
+
+
+# class Laptop:
+#     def __init__(self, name , Model_name , price):
+#         self.name = name
+#         self.Model_name = Model_name
+#         self.price = price
+#     def disc(self,num):
+#         off_prize = (num/100)*self.price
+#         return self.price - off_prize
+
+# st = Laptop("HP" , "Elitebook" , 35000)
+# print(st.disc(10))
+
+# def multi(num , *args):
+#     multiply = 1
+#     print(num)
+#     print(args)
+#     for i in args:
+#         multiply *= i
+#     return multiply
+# print(multi(2))
+
+# def multi(*args):
+#     multiply = 1
+#     for i in args:
+#         multiply *= i
+#     return multiply
+# num = (1,2,3,45)
+# print(multi(num))
+
+# def my(num , *args):
+#     if args:
+#         return [i**num for i in args]
+#     else:
+#         return "Beta Kiya Ker Rahe Ho"
+
+# nums = [2,3,4,5,6]
+# print(my(4, *nums))
+
+
+# def func(**kwargs):
+#     for k,v in kwargs.items():
+#         print(f"{k} : {v}")
+# dic = {"name" : "Sami" ,"age " : 23}
+# print(func(**dic))
+
+# add2 = lambda a,b : a+b
+# mul2 = lambda a,b : a*b
+# print(add2(2,3))
+# print(mul2(2,3))
+ 
+
+# gg = lambda s : True if len(s) > 2 else False
+# print(gg("SamiulHaq")) 
+
+
+# class Laptop():
+#     def __init__(self, name , brand , price):
+#         self.name = name
+#         self.brand = brand
+#         self.price = price
+#         self.laptop_name = name + " " + brand 
+
+#     def apply_dis(self,num):
+#         off = (num/100)*self.price
+#         return self.price - off
+
+
+# ob = Laptop("Hp" , "EliteBook" , 33000)
+# print(ob.name)
+# print(ob.laptop_name)
+# print(ob.price)
+# print(ob.apply_dis(50))
+
+# class Laptop():
+#     discount = 10
+#     def __init__(self, name , brand , price):
+#         self.name = name
+#         self.brand = brand
+#         self.price = price
+#         self.laptop_name = name + " " + brand 
+
+#     def apply_dis(self):
+#         off = (self.discount/100)*self.price
+#         return self.price - off
+
+
+# ob = Laptop("Hp" , "EliteBook" , 33000)
+# print(ob.apply_dis())
+
+# print(ob.__dict__)
+
+
+# class Person():
+#     countint = 0
+#     def __init__(self,f_name , l_name , age , gender):
+#         Person.countint += 1
+#         self.f_name = f_name
+#         self.l_name = l_name
+#         self.age = age
+#         self.gender = gender
+
+# p1 = Person("Sami" ,"Haq" , 18 , "Male")
+# p14 = Person("Sami" ,"Haq" , 18 , "Male")
+
+# p4 = Person("Sami" ,"Haq" , 18 , "Male")
+
+# p33 = Person("Sami" ,"Haq" , 18 , "Male")
+
+# p3 = Person("Sami" ,"Haq" , 18 , "Male")
+
+# print(Person.countint)
+
+
+
+# # add2 = lambda a,b : a+b
+
+# # print(add2(2,3))
+
+# # iseven = lambda a:a%2==0
+
+# # print(iseven(6))
+
+
+# # func = lambda s : Ture if len(s) > 4 else False
+
+
+# # Without Enumerate Function
+
+# names = ["sami" , "khalid" , "Wase" , "usma"]
+# # pos = 0
+# # for name in names:
+    
+# #     print(f"{pos} : {name}")
+# #     pos += 1
+
+# # print(names)
+
+# #With Enumerate
+# def find_pos(l,target):
+#     for pos,name in enumerate(l):
+#         if name == target:
+#             return pos
+#     return -1
+
+# print(find_pos(names, "sami"))
+
+
+# names = ["abc" , "abcd" , "abcde" ]
+# length = list(map(len , names))
+# print(length)
+
+# func = lambda s : True if len(s) > 5 else False
+
+# print(func("Samiulhaq"))
+# name = ["abc" , "abcd" , "abcde" ]
+# for pos,name in enumerate(name):
+#     print(f"{pos}----> {name`}")
+
+# num = [1,2,3,4,5]
+
+# square = list(map(lambda a:a**2,num))
+# print(square)
+
+# even = []
+# for i in numbers:
+#     if i%2==0:
+#         even.append(i)
+
+# print(even)
+# numbers = [3,4,2,1,5,6,9,8,10]
+# def is_even(a):
+#     return a%2==0
+# even = list(filter(is_even,numbers))
+# print(even)
+
+# for i in even:
+#     print(i)
+
+# user_id = ["user1","user2","user3","user4"]
+# names = ["Sami","Khalid","Hassan","Nisar"]
+# combo = dict(zip(user_id,names))
+# print(combo)
+
+# l = [(1,2),(3,4),(5,6),(7,8)]
+# l1,l2 =list(zip(*l))
+# print(l1)
+# print(l2)
+# l1 = [1,2,3,4,5]
+# l2 = [6,7,8,9,10]
+# zipped = tuple(zip(l1,l2))
+# print(zipped)
+
+# def avg_fin(*arg):
+#     ave = []
+#     for pair in zip(*arg):
+#         ave.append(sum(pair)//len(pair))
+#     return ave
+
+# print(avg_fin([1,2,3],[4,5,6],[7,8,9]))
+
+# def my_sum(*args):
+#     if all([(type(arg)==int or type(arg)==float) for arg in args]):
+#         total = 0
+#         for num in args:
+#             total += num
+#         return total
+#     else:
+#         return "Wrong Info"
+# print(my_sum(1,2,3,4,5,6,7 , "Sami"))
+
+# names = ["Sami" ,"Khalid" ,"Junaidi","Mesam"]
+# def func(item):
+#     return len(item)
+# print(max(names , key= func))
+
+# names = ["Sami" ,"Khalid" ,"Junaidi","Mesam"]
+# print(min(names , key= lambda item: len(item)))
+
+# cars = [
+#     {"Model":"Carolla" , "Price":640000},
+#     {"Model":"Caroll" , "Price":740000},
+#     {"Model":"Caroa" , "Price":840000},
+#     {"Model":"Carla" , "Price":940000}
+# ]
+
+# print(sorted(cars, key= lambda item : item["Price"], reverse=True))
+
+# print(sum.__doc__)
+
+# l = [1,2,3,4,5,6]
+
+# def my_func(func,l):
+#     mylist = []
+#     for item in l:
+#         mylist.append(func(item))
+#     return mylist
+
+# print(my_func(lambda a : a**3 , l))
+
+# def outer():
+#     def inner():
+#         print("This Is Inner Function")
+#     return inner
+# var = outer()
+# var()
+
+def to_power(power):
+    def calc_power(number):
+        return number**power
+    return calc_power
+ans = to_power(3)
+print(ans(2))
